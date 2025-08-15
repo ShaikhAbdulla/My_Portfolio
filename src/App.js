@@ -245,7 +245,7 @@ const Card = ({ project }) => (
       <img
         // src="/assets/icons/bandhan_mf.png"
         src={project.icon}
-        // alt={project.title}
+        alt={project.title}
         style={{ width: "40px", height: "40px", objectFit: "contain", borderRadius: "10px",justifyContent:'-moz-initial',alignSelf:'center' }}
       />
       <h3 className="card-title">{project.title}</h3>
@@ -253,7 +253,7 @@ const Card = ({ project }) => (
     <p className="card-description">{project.description}</p>
     <p className="card-tech">Tech Stack: {project.tech.join(", ")}</p>
     <a className="card-link" href={project.apkLink} target="_blank" rel="noopener noreferrer">
-      {project.title=='Zero Waste'?'Visit web':'Download APK'}
+      {project.title==='Zero Waste'?'Visit web':'Download APK'}
     </a>
   </div>
 );
