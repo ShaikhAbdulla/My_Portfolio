@@ -8,7 +8,7 @@ import {
   SiRedux,
   SiJavascript,
   SiHtml5,
-  SiCss3,
+  // SiCss3,
   SiFirebase,
   SiMongodb,
   SiPostman,
@@ -20,6 +20,8 @@ import {
   SiSqlite,
   SiJest,
   SiStripe,
+  SiPhonepe,
+  SiRazorpay
 } from 'react-icons/si';
 import { FaDatabase } from 'react-icons/fa';
 // import Tooltip from 'react-tooltip';
@@ -42,6 +44,7 @@ import bandhanIcon from "../src/assets/icons/bandhan_mf.png"
 import LaIcon from "../src/assets/icons/LastingAsset-Logo.png"
 import ascelus from "../src/assets/icons/ascelus.webp"
 import zerowaste from "../src/assets/icons/zerowasteapp.jpg"
+import veloxplanet from "../src/assets/icons/veloxplanet.jpeg"
 
 const tools = [
   { name: "VS Code", icon: <SiVscodium /> },
@@ -66,7 +69,7 @@ const skillIcons = {
   "React Navigation": <SiReact />,
   "JavaScript": <SiJavascript />,
   "HTML": <SiHtml5 />,
-  "CSS": <SiCss3 />,
+  // "CSS": <SiCss3 />,
   "Node.js": <SiNodedotjs />,
   "MongoDB": <SiMongodb />,
   // "Firebase": <SiFirebase />,
@@ -79,12 +82,13 @@ const skillIcons = {
   "GitHub": <SiGithub />,
   "Heroku": <SiHeroku />,
   "Agile/Scrum": <span>📋</span>,
-  "Razorpay SDK": <span>💳</span>,
+  "Razorpay SDK": <SiRazorpay/>,
   "Branch.io": <span>🌿</span>,
   "AAR Integration": <span>📦</span>,
   "Xcode": <SiXcode />,
   "Stripe": <SiStripe />,
-  "Animations": <span>🎨</span>
+  "Animations": <span>🎨</span>,
+  "PhonePe": <SiPhonepe/>
 };
 
 // const skills = [
@@ -93,6 +97,7 @@ const skillIcons = {
 //   "AAR Integration", "Webhooks", "Stripe", "JavaScript", "HTML", "CSS",
 //   "Git", "GitHub", "Postman", "MongoDB", "Node.js", "Agile/Scrum", "Heroku", "Xcode"
 // ];
+
 export const skills = [
   { name: "React Native", desc: "Cross-platform mobile framework by Meta" },
   { name: "Redux Toolkit", desc: "State management made simple" },
@@ -117,7 +122,8 @@ export const skills = [
   { name: "AAR Integration", desc: "Android native library" },
   // { name: "Xcode", desc: "Apple IDE for iOS apps" },
   { name: "Stripe", desc: "Online payment processing" },
-  { name: "Animations", desc: "Motion design in mobile UI" }
+  { name: "Animations", desc: "Motion design in mobile UI" },
+   { name: "PhonePe", desc: "Digital payment solution" }
 ];
 
 // const experience = [
@@ -198,6 +204,14 @@ const experience = [
 ];
 
 const projects = [
+  
+  {
+    title: "PlanetGuard Crm App",
+    icon:veloxplanet,
+    description:"Planet Guard CRM empowers sales professionals to manage their daily check-ins, mark attendance, and pitch products seamlessly - all from one app. Stay productive and organized with our intuitive CRM designed for the modern sales force.",
+    tech: ["React Native",'Native Integration',"PhonePe",'Razorpay SDK'],
+    apkLink: "https://apps.apple.com/in/app/veloxsecurecrmapp/id6753583770",
+  },
   {
     title: "Bandhan Mutual Fund Investor App",
     icon:bandhanIcon,
@@ -267,7 +281,7 @@ const Navbar = () => (
         <a className="nav-item" href="#projects">Projects</a>
         <a className="nav-item" href="#resume">Resume</a>
         <a className="nav-item" href="#contact">Contact</a>
-        <a href="./assets/resume/Abdulla_Shaikh_React_Native_Resume.pdf" download className="download-btn">Download Resume</a>
+        <a href="https://drive.google.com/file/d/1H-76YzNNNELi6GxVJGGVjPk48k3IOJiX/view?usp=sharing" download className="download-btn">Download Resume</a>
       </div>
   
     </div>
@@ -452,7 +466,7 @@ export default function App() {
           <h2 className="section-title">Resume</h2>
           <a
             className="resume-link"
-            href="/Abdulla_Shaikh_React_Native_Resume.pdf"
+            href="https://drive.google.com/file/d/1H-76YzNNNELi6GxVJGGVjPk48k3IOJiX/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
