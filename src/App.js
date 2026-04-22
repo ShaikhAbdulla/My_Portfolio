@@ -340,7 +340,7 @@ export default function App() {
 
   return (
     <div className="bg-image">
-      <Navbar />
+      <Navbar className="sticky top-0 z-50"/>
       <div className="container">
         <header className="header">
          <p className="header-title2">

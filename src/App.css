@@ -4,7 +4,7 @@
   background-position: center;
   width: 100vw;         /* Ensures it takes full viewport width */
   min-height: 100dvh;
-  overflow-x: hidden;   /* Prevents sideways scroll */
+  overflow-x: visible;   /* Prevents sideways scroll */
   color: white;
 }
 
@@ -181,9 +181,11 @@
   color: #0ea5e9;
 }
 .navbar-container{
-padding: 15px;
+  position: '-webkit-sticky'; /* For Safari */
+  position: sticky;
+padding: 10px;
 text-align: end;
-/* position: sticky; */
+/* position: absolute; */
 }
 .nav-item{
 margin: 20px;
@@ -278,6 +280,10 @@ font-size: large;
 .enhanced-navbar {
   position: sticky;
   top: 0;
+   /* position: sticky; */
+  /* top: 0; */
+  width: 100%;
+  /* z-index: 1000; */
  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
   padding: 1px 2px;
